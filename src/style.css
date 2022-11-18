@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background-color: rgba(210, 203, 203, 0.925);
+  border-radius: 20px;
+  height: 63px;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+.heading .logo {
+  padding: 10px 20px;
+  position: absolute;
+  color: rgb(112, 111, 111);
+}
+.heading .nav {
+  margin: 15px 0 0 150px;
+}
+.heading .nav ul li {
+  float: left;
+  list-style: none;
+  margin-top: 20px;
+}
+.heading .nav ul li a {
+  text-decoration: none;
+  color: grey;
+  padding: 20px 60px;
+}
+.heading .nav ul li a:hover {
+  color: white;
+  background-color: black;
+}
+
+.info {
+  margin: 40px;
+}
+
+.selection {
+  padding: 15px 40px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.selection option {
+  margin-top: 10px;
+}
+
+.task-hero {
+  margin: 50px 150px;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+.task-hero .task {
+  margin: 0 10px;
+}
+.task-hero .title {
+  margin-top: -37px;
+  margin-left: 70px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.task-hero .completed {
+  margin-top: -42px;
+  margin-left: 80%;
+}
+
+.addbtn {
+  padding: 15px 25px;
+  margin: 50px;
+  font-size: 20px;
+  background-color: rgba(33, 175, 241, 0.989);
+  outline-style: none;
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.deletebtn {
+  padding: 15px 25px;
+  margin: -40px 0 0 0;
+  font-size: 20px;
+  background-color: rgba(209, 63, 40, 0.86);
+  outline-style: none;
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.addedTask {
+  justify-content: center;
+  margin: auto;
+  margin: -75px 170px;
+  padding: 50px 0;
+}
+.addedTask .addedList {
+  padding: 35px 0px;
+  font-size: 25px;
+  margin: 0px 0 0 50px;
+  border-bottom: 1px solid;
+}
+.addedTask .deletebtn {
+  margin-top: -70px;
+}
+
+.inputTask {
+  padding: 20px;
+  margin: 0 0 0 30px;
+  font-size: 15px;
+}
+
+.login {
+  margin: 15vh 150px;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+.login .inputtext,
+.login .password {
+  margin: 0 10px;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+.login .passlabel {
+  position: absolute;
+  top: 100px;
+}
+.login .changepass,
+.login .logout {
+  padding: 10px;
+  margin: 20px 0;
+  width: 13%;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  text-align: center;
+}
+.login .logout {
+  left: 35vh;
+}
+
+.changepass {
+  margin: 15vh 150px;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+.changepass .username,
+.changepass .newpass {
+  margin: 0 10px;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+.changepass .newpasslabel {
+  position: absolute;
+  top: 100px;
+}
+.changepass .savepass,
+.changepass .logoutsession {
+  padding: 10px 0;
+  margin: 20px 0;
+  width: 55%;
+  position: absolute;
+  top: 40vh;
+  left: 0;
+}
+.changepass .logoutsession {
+  left: 35vh;
+}/*# sourceMappingURL=style.css.map */
