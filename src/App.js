@@ -8,7 +8,7 @@ import Login from "./components/login/Login";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Task from "./components/task/Task";
 import Drop from "./components/dropdown/Drop";
-import Passchange from "./components/login/Passchange";
+import Authlogin from "./components/authentication/Authlogin";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route exact path="/home" element={<Drop />} />
           <Route exact path="/task" element={<Task />} />
-          <Route exact path="/user" element={<Login />} />
+          <Route exact path="/user" element={<Authlogin />} />
         </Routes>
       </BrowserRouter>
 
