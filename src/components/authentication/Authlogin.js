@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Navbar from "../Navbar";
 import Loggedinpage from "./Loggedinpage";
 
 function Authlogin() {
@@ -8,7 +9,7 @@ function Authlogin() {
   const getPassword = localStorage.getItem("passwordData");
   const handleSubmit = () => {
     if (
-      email.current.value == "abc@gmail.com" &&
+      email.current.value == "abcd@gmail.com" &&
       password.current.value == "12345"
     ) {
       localStorage.setItem("emailData", "abc@gmail.com");
@@ -19,7 +20,7 @@ function Authlogin() {
   return (
     <div>
       {getEmail && getPassword ? (
-        <Loggedinpage />
+        <Navbar />
       ) : (
         <form className="formcent" onSubmit={handleSubmit}>
           <div>

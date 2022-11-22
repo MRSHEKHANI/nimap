@@ -2,6 +2,9 @@ import { useState } from "react";
 import clsx from "clsx";
 import styles from "./LoginForm.module.css";
 import { useLoginFormValidator } from "./hooks/useLoginFormValidator";
+import Navbar from "../components/Navbar";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Authlogin from "../components/authentication/Authlogin";
 
 const LoginForm = () => {
   const [form, setForm] = useState({
@@ -30,6 +33,11 @@ const LoginForm = () => {
     const { isValid } = validateForm({ form, errors, forceTouchErrors: true });
     if (!isValid) return;
     alert(JSON.stringify(form, null, 2));
+  };
+
+  const handleClick = () => {
+    localStorage.clear();
+    window.location.reload();
   };
 
   return (
@@ -74,31 +82,13 @@ const LoginForm = () => {
           </p>
         ) : null}
       </div>
-      {/* <div className={styles.formGroup}>
-        <label className={styles.formLabel}>Confirm Password</label>
-        <input
-          className={clsx(
-            styles.formField,
-            errors.confirmPassword.dirty &&
-              errors.confirmPassword.error &&
-              styles.formFieldError
-          )}
-          type="password"
-          aria-label="Confirm password field"
-          name="confirmPassword"
-          value={form.confirmPassword}
-          onChange={onUpdateField}
-          onBlur={onBlurField}
-        />
-        {errors.confirmPassword.dirty && errors.confirmPassword.error ? (
-          <p className="formFieldErrorMessage">
-            {errors.confirmPassword.message}
-          </p>
-        ) : null}
-      </div> */}
+
       <div className="formActions">
         <button className="formSubmitBtn" type="submit">
           Login
+        </button>
+        <button className="logoutbtn" onClick={handleClick}>
+          logout
         </button>
       </div>
     </form>

@@ -9,18 +9,12 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Task from "./components/task/Task";
 import Drop from "./components/dropdown/Drop";
 import Authlogin from "./components/authentication/Authlogin";
+import AuthenticLogin from "./authentication/AuthenticLogin";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/home" element={<Drop />} />
-          <Route exact path="/task" element={<Task />} />
-          <Route exact path="/user" element={<Authlogin />} />
-        </Routes>
-      </BrowserRouter>
+      <Authlogin />
 
       {/* <Navbar /> */}
       {/* <Taskdata /> */}
